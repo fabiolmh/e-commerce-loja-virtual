@@ -14,7 +14,7 @@ let precoSubproduto = quantidade * precoProduto;
 //Adicionar itens ao carrinho
 let carrinho = document.getElementById('lista-produtos');
 carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
-          <span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R$${precoProduto},00</span>
+          <span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R$${precoSubproduto},00</span>
         </section>`;
 
 //Calcular o preço da compra total
@@ -26,4 +26,5 @@ mostrarValorTotal.innerHTML =       `<p class="carrinho__total">
 }
 
 function limpar(){
+  window.location.reload();
 }
