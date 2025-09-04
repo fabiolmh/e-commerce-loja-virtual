@@ -23,6 +23,7 @@ let mostrarValorTotal = document.getElementById('valor-total');
 mostrarValorTotal.innerHTML =       `<p class="carrinho__total">
         Total: <span class="texto-azul" id="valor-total">R$${valorTotal},00</span>
       </p>`;
+      quantidade = 0;
 }
 
 function limpar(){
